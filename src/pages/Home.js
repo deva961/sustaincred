@@ -3,7 +3,8 @@ import Header from "../layout/Header";
 import blackDots from "../assets/black_dots.svg";
 import treeBg from "../assets/tree_bg.png";
 import treeWeb from "../assets/tree_web_03.png";
-import treeMB from "../assets/tree.png";
+import treeMD from "../assets/tree.png";
+import treeMB from "../assets/tree_web_04.png";
 import Icon1 from "../assets/icon_1.svg";
 import Icon2 from "../assets/icon_2.svg";
 import Icon3 from "../assets/icon_3.svg";
@@ -23,7 +24,7 @@ const Home = () => {
         <div className="max-w-5xl mx-auto px-10">
           <div className="absolute top-1/2 typing_container">
             <p className="xl:text-5xl md:text-4xl text-2xl font-bold tracking-wide">
-              <span className="font-outline-1 leading-relaxed typing_anime_text">
+              <span className="text-softprimary leading-relaxed typing_anime_text">
                 Partnering in your
               </span>
               <br />
@@ -46,8 +47,13 @@ const Home = () => {
           alt=""
         />
         <img
+          src={treeMD}
+          className="w-full hidden md:flex xl:hidden object-cover absolute top-0"
+          alt=""
+        />
+        <img
           src={treeMB}
-          className="w-full  xl:hidden object-cover absolute top-0"
+          className="w-full md:hidden object-cover absolute top-0"
           alt=""
         />
         <div className=" z-10 relative  px-7">
@@ -60,7 +66,7 @@ const Home = () => {
             <img
               src={require("../assets/partner.png")}
               alt=""
-              className="pt-44 w-full px-7 "
+              className="pt-10 sm:pt-20 md:pt-44 w-full px-7 "
             />
             {/* <div className="grid grid-cols-3 gap-2 mt-5">
               {[1, 2, 3].map((index) => (
@@ -113,7 +119,7 @@ const Home = () => {
               <h1 className="font-bold text-right xl:text-5xl tracking-wide font-outline-2 leading-relaxed ">
                 Our Approach
               </h1>
-              <p className="text-black lg:text-white text-sm text-right mt-2">
+              <p className="text-white md:text-black  lg:text-white text-sm text-right mt-2">
                 Four major steps underpinning our differentiated approach
               </p>
 

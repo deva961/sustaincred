@@ -76,13 +76,13 @@ const Footer = () => {
                   <GrLinkedinOption className="h-3.5 w-3.5 text-white" />
                 </Link>
                 <Link className="bg-darksecondary rounded-full p-3">
-                <LuInstagram className="h-3.5 w-3.5 text-white"/>
+                  <LuInstagram className="h-3.5 w-3.5 text-white" />
                 </Link>
                 <Link className="bg-darksecondary rounded-full p-3">
-                <RiTwitterXFill className="h-3.5 w-3.5 text-white"/>
+                  <RiTwitterXFill className="h-3.5 w-3.5 text-white" />
                 </Link>
                 <Link className="bg-darksecondary rounded-full p-3">
-                <ImWhatsapp className="h-3.5 w-3.5 text-white"/>
+                  <ImWhatsapp className="h-3.5 w-3.5 text-white" />
                 </Link>
               </div>
             </div>
@@ -91,10 +91,11 @@ const Footer = () => {
 
         <div className="bg-gray-200 h-1 rounded-full"></div>
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center justify-between text-white font-light py-2.5">
-            <Link to={"/"}>TERMS & CONDITIONS</Link>
-            <Link to={"/"}>PRIVACY POLICY</Link>
-
+          <div className=" sm:flex items-center justify-between text-white font-light py-2.5">
+            <div className="space-x-5">
+              <Link to={"/"}>TERMS & CONDITIONS</Link>
+              <Link to={"/"}>PRIVACY POLICY</Link>
+            </div>
             <p>2023 SustainCred, All Rights Reserved</p>
           </div>
         </div>

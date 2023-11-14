@@ -39,7 +39,7 @@
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid seagreen;
+  /* border-right: 2px solid seagreen; */
   animation: typing 2s steps(16);
 }
 
